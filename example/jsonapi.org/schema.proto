@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+message ApiResponse {
+  Links links = 1;
+  repeated ResourceObject data = 2;
+  repeated ResourceObject included = 3;
+}
+
+message Links {
+  string self = 1;
+  string next = 2;
+  string last = 3;
+}
+
+message ResourceObject {
+  string type = 1;
+  string id = 2;
+  Attributes attributes = 3;
+  Relationships relationships = 4;
+  Links links = 5;
+}
+
+message Attributes {
+  string title = 1;
+  string firstName = 2;
+  string lastName = 3;
+  string twitter = 4;
+  string body = 5;
+}
+
+message Relationships {
+  AuthorRelationship author = 1;
+  CommentRelationship comments = 2;
+}
+
+message AuthorRelationship {
+  Links links = 1;
+  ResourceIdentifier data = 2;
+}
+message CommentRelationship {
+  Links links = 1;
+  repeated ResourceIdentifier list = 2;
+}
+
+message ResourceIdentifier {
+  string type = 1;
+  string id = 2;
+}

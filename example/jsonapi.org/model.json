@@ -1,0 +1,229 @@
+{
+    "particles": {
+        "ApiResponse": {
+            "name": "ApiResponse",
+            "properties": [
+                {
+                    "name": "links",
+                    "type": {
+                        "type": "Links",
+                        "array": false
+                    }
+                },
+                {
+                    "name": "data",
+                    "type": "ResourceObject"
+                },
+                {
+                    "name": "included",
+                    "type": "ResourceObject"
+                }
+            ]
+        },
+        "Links": {
+            "name": "Links",
+            "properties": [
+                {
+                    "name": "self",
+                    "type": {
+                        "type": "string",
+                        "array": false
+                    }
+                },
+                {
+                    "name": "next",
+                    "type": {
+                        "type": "string",
+                        "array": false
+                    }
+                },
+                {
+                    "name": "last",
+                    "type": {
+                        "type": "string",
+                        "array": false
+                    }
+                }
+            ]
+        },
+        "ResourceObject": {
+            "name": "ResourceObject",
+            "properties": [
+                {
+                    "name": "type",
+                    "type": {
+                        "type": "string",
+                        "array": false
+                    }
+                },
+                {
+                    "name": "id",
+                    "type": {
+                        "type": "string",
+                        "array": false
+                    }
+                },
+                {
+                    "name": "attributes",
+                    "type": {
+                        "type": "Attributes",
+                        "array": false
+                    }
+                },
+                {
+                    "name": "relationships",
+                    "type": {
+                        "type": "Relationships",
+                        "array": false
+                    }
+                },
+                {
+                    "name": "links",
+                    "type": {
+                        "type": "Links",
+                        "array": false
+                    }
+                }
+            ]
+        },
+        "Attributes": {
+            "name": "Attributes",
+            "properties": [
+                {
+                    "name": "title",
+                    "type": {
+                        "type": "string",
+                        "array": false
+                    }
+                },
+                {
+                    "name": "firstName",
+                    "type": {
+                        "type": "string",
+                        "array": false
+                    }
+                },
+                {
+                    "name": "lastName",
+                    "type": {
+                        "type": "string",
+                        "array": false
+                    }
+                },
+                {
+                    "name": "twitter",
+                    "type": {
+                        "type": "string",
+                        "array": false
+                    }
+                },
+                {
+                    "name": "body",
+                    "type": {
+                        "type": "string",
+                        "array": false
+                    }
+                }
+            ]
+        },
+        "Relationships": {
+            "name": "Relationships",
+            "properties": [
+                {
+                    "name": "author",
+                    "type": {
+                        "type": "Relationship",
+                        "array": false
+                    }
+                },
+                {
+                    "name": "comments",
+                    "type": {
+                        "type": "Relationship",
+                        "array": false
+                    }
+                }
+            ]
+        },
+        "Relationship": {
+            "name": "Relationship",
+            "properties": [
+                {
+                    "name": "links",
+                    "type": {
+                        "type": "Links",
+                        "array": false
+                    }
+                },
+                {
+                    "name": "data",
+                    "type": {
+                        "type": [
+                            {
+                                "type": "ResourceIdentifier",
+                                "array": false
+                            },
+                            {
+                                "type": "ResourceIdentifier",
+                                "array": true
+                            }
+                        ],
+                        "array": true
+                    }
+                }
+            ]
+        },
+        "ResourceIdentifier": {
+            "name": "ResourceIdentifier",
+            "properties": [
+                {
+                    "name": "type",
+                    "type": {
+                        "type": "string",
+                        "array": false
+                    }
+                },
+                {
+                    "name": "id",
+                    "type": {
+                        "type": "string",
+                        "array": false
+                    }
+                }
+            ]
+        },
+        "Test": {
+            "name": "Test",
+            "properties": [
+                {
+                    "name": "test",
+                    "type": {
+                        "type": [
+                            {
+                                "type": "string",
+                                "array": false
+                            },
+                            {
+                                "type": "number",
+                                "array": false
+                            }
+                        ],
+                        "array": true
+                    }
+                },
+                {
+                    "name": "test2",
+                    "type": "string"
+                },
+                {
+                    "name": "test3",
+                    "type": "string[]"
+                }
+            ]
+        }
+    },
+    "meta": {
+        "syntax": "1.0",
+        "charset": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+-/àâéèêëïîôœöûç.#,;:?!$%&'()*+,-./:;<=>?@[]^_`{|}~ \"°\\\t\n©®’–…"
+    }
+}

@@ -1,0 +1,51 @@
+syntax = "1.0"
+charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+-/àâéèêëïîôœöûç.#,;:?!$%&'()*+,-./:;<=>?@[]^_`{|}~ \"°\\\t\n©®’–…"
+----
+ApiResponse {
+    links: Links
+    data: ResourceObject[]
+    included: ResourceObject[]
+}
+
+Links {
+    self: string
+    next: string
+    last: string
+}
+
+ResourceObject {
+    type: string
+    id: string
+    attributes: Attributes
+    relationships: Relationships
+    links: Links
+}
+
+Attributes {
+    title: string
+    firstName: string
+    lastName: string
+    twitter: string
+    body: string
+}
+
+Relationships {
+    author: Relationship
+    comments: Relationship
+}
+
+Relationship {
+    links: Links
+    data: ResourceIdentifier | ResourceIdentifier[]
+}
+
+ResourceIdentifier {
+    type: string
+    id: string
+}
+
+Test {
+    test: (string | number)[]
+    test2: string[]
+    test3: string[][]
+}
