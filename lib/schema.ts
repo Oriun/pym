@@ -58,7 +58,10 @@ export function parse(schema: string): PymModel {
         throw new Error("Invalid property");
       }
       const parsedType = parseType(type);
-      const short = parsedType.array && typeof parsedType.type === "string";
+      const short =
+        typeof parsedType !== "string" &&
+        parsedType.array &&
+        typeof parsedType.type === "string";
       current_particle.properties.push({
         name,
         type: short ? parsedType.type : parsedType,
@@ -69,11 +72,11 @@ export function parse(schema: string): PymModel {
   return model as PymModel;
 }
 
-function parseType(_type: string): PymType {
+function parseType(_type: string): string | PymType {
   const array = _type.endsWith("[]");
   const type = array ? _type.slice(0, -2) : _type;
   if (/^[a-zA-Z]+(\[\])?$/.test(type)) {
-    return { type, array };
+    return array ? { type: parseType(type), array } : type;
   }
   if (type.startsWith("(") && type.endsWith(")")) {
     const res = parseType(type.slice(1, -1).trim());
