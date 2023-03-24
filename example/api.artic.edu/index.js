@@ -10,11 +10,14 @@ const proto = protobuf(fs.readFileSync(__dirname + "/schema.proto", "utf-8"));
 const schema = pym(fs.readFileSync(__dirname + "/schema.pym", "utf-8"));
 
 console.time("Protocole Buffer");
-const protoEncoded = proto.ApiResponse.encode(object);
+const protoEncoded = proto.ArtworkResponse.encode(object);
 console.timeEnd("Protocole Buffer");
 console.time("Pym");
-const pymEncoded = schema.encode("ApiResponse", object);
+const pymEncoded = schema.encode("ArtworkResponse", object);
 console.timeEnd("Pym");
+
+const model = schema.compile();
+fs.writeFileSync(__dirname + "/compiled.pym", model);
 
 console.log(`
 JSON : ${data.length} / 100%

@@ -1,0 +1,36 @@
+syntax = "1.0"
+----
+Response {
+    id: string
+    meta: Meta
+    analytics: Analytics
+    compositions: string[]
+    advertisements: Advertisement[]
+}
+
+Meta {
+    name: string
+    issuedAt: number
+    expiresAt: number
+}
+
+Analytics {
+    source: string
+    source_id: string
+}
+
+Advertisement {
+    id: string
+    firstLine: string
+    secondLine: string
+    thirdLine: string
+    previewLink: string
+    originLink: string
+    type: string
+    picture: string
+    composition: Composition
+}
+
+Composition {
+    filename: string
+}

@@ -1,5 +1,4 @@
 syntax = "1.0"
-charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+-/àâéèêëïîôœöûç.#,;:?!$%&'()*+,-./:;<=>?@[]^_`{|}~ \"°\\\t\n©®’–…"
 ----
 ApiResponse {
     links: Links
@@ -42,10 +41,4 @@ Relationship {
 ResourceIdentifier {
     type: string
     id: string
-}
-
-Test {
-    test: (string | number)[]
-    test2: string[]
-    test3: string[][]
 }

@@ -1,0 +1,118 @@
+syntax = "proto3";
+
+message ApiResponse {
+  repeated AnimeData data = 1;
+  Pagination pagination = 2;
+}
+
+message AnimeData {
+  int32 mal_id = 1;
+  string url = 2;
+  Images images = 3;
+  Trailer trailer = 4;
+  bool approved = 5;
+  repeated TitleEntry titles = 6;
+  string title = 7;
+  string title_english = 8;
+  string title_japanese = 9;
+  repeated string title_synonyms = 10;
+  string type = 11;
+  string source = 12;
+  int32 episodes = 13;
+  string status = 14;
+  bool airing = 15;
+  Aired aired = 16;
+  string duration = 17;
+  string rating = 18;
+  int32 score = 19;
+  int32 scored_by = 20;
+  int32 rank = 21;
+  int32 popularity = 22;
+  int32 members = 23;
+  int32 favorites = 24;
+  string synopsis = 25;
+  string background = 26;
+  string season = 27;
+  int32 year = 28;
+  Broadcast broadcast = 29;
+  repeated Company producers = 30;
+  repeated Company licensors = 31;
+  repeated Company studios = 32;
+  repeated Tag genres = 33;
+  repeated Tag explicit_genres = 34;
+  repeated Tag themes = 35;
+  repeated Tag demographics = 36;
+}
+
+message Images {
+  ImageGroup jpg = 1;
+  ImageGroup webp = 2;
+}
+
+message ImageGroup {
+  string image_url = 1;
+  string small_image_url = 2;
+  string large_image_url = 3;
+}
+
+message Trailer {
+  string youtube_id = 1;
+  string url = 2;
+  string embed_url = 3;
+}
+
+message TitleEntry {
+  string type = 1;
+  string title = 2;
+}
+
+message Aired {
+  string from = 1;
+  string to = 2;
+  AiredProp prop = 3;
+}
+
+message AiredProp {
+  Date from = 1;
+  Date to = 2;
+  string string = 3;
+}
+
+message Date {
+  int32 day = 1;
+  int32 month = 2;
+  int32 year = 3;
+}
+
+message Broadcast {
+  string day = 1;
+  string time = 2;
+  string timezone = 3;
+  string string = 4;
+}
+
+message Company {
+  int32 mal_id = 1;
+  string type = 2;
+  string name = 3;
+  string url = 4;
+}
+
+message Tag {
+  int32 mal_id = 1;
+  string type = 2;
+  string name = 3;
+  string url = 4;
+}
+
+message Pagination {
+  int32 last_visible_page = 1;
+  bool has_next_page = 2;
+  Items items = 3;
+}
+
+message Items {
+  int32 count = 1;
+  int32 total = 2;
+  int32 per_page = 3;
+}

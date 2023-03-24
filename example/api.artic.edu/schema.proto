@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+message ArtworkResponse {
+    Pagination pagination = 1;
+    repeated Artwork data = 2;
+}
+
+message Pagination {
+    int32 total = 1;
+    int32 limit = 2;
+    int32 offset = 3;
+    int32 total_pages = 4;
+    int32 current_page = 5;
+    string next_url = 6;
+}
+
+message Artwork {
+    int32 id = 1;
+    string api_model = 2;
+    string api_link = 3;
+    bool is_boosted = 4;
+    string title = 5;
+    Thumbnail thumbnail = 6;
+    string main_reference_number = 7;
+    bool has_not_been_viewed_much = 8;
+    int32 date_start = 9;
+    int32 date_end = 10;
+    string date_display = 11;
+    string artist_display = 12;
+    string place_of_origin = 13;
+    string dimensions = 14;
+    string medium_display = 15;
+    string credit_line = 16;
+}
+
+message Thumbnail {
+    string lqip = 1;
+    int32 width = 2;
+    int32 height = 3;
+    string alt_text = 4;
+}

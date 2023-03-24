@@ -1,0 +1,118 @@
+syntax = "1.0"
+----
+ApiResponse {
+  data: AnimeData[]
+  pagination: Pagination
+}
+
+AnimeData {
+  mal_id: number
+  url: string
+  images: Images
+  trailer: Trailer
+  approved: boolean
+  titles: TitleEntry[]
+  title: string
+  title_english: string
+  title_japanese: string
+  title_synonyms: string[]
+  type: string
+  source: string
+  episodes: number
+  status: string
+  airing: boolean
+  aired: Aired
+  duration: string
+  rating: string
+  score: number
+  scored_by: number
+  rank: number
+  popularity: number
+  members: number
+  favorites: number
+  synopsis: string
+  background: string
+  season: string
+  year: number
+  broadcast: Broadcast
+  producers: Company[]
+  licensors: Company[]
+  studios: Company[]
+  genres: Tag[]
+  explicit_genres: Tag[]
+  themes: Tag[]
+  demographics: Tag[]
+}
+
+Images {
+  jpg: ImageGroup
+  webp: ImageGroup
+}
+
+ImageGroup {
+  image_url: string
+  small_image_url: string
+  large_image_url: string
+}
+
+Trailer {
+  youtube_id: string
+  url: string
+  embed_url: string
+}
+
+TitleEntry {
+  type: string
+  title: string
+}
+
+Aired {
+  from: string
+  to: string
+  prop: AiredProp
+}
+
+AiredProp {
+  from: Date
+  to: Date
+  string: string
+}
+
+Date {
+  day: number
+  month: number
+  year: number
+}
+
+Broadcast {
+  day: string
+  time: string
+  timezone: string
+  string: string
+}
+
+Company {
+  mal_id: number
+  type: string
+  name: string
+  url: string
+}
+
+Tag {
+  mal_id: number
+  type: string
+  name: string
+  url: string
+}
+
+Pagination {
+  last_visible_page: number
+  has_next_page: boolean
+  items: Items
+}
+
+Items {
+  count: number
+  total: number
+  per_page: number
+}

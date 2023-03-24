@@ -11,7 +11,7 @@ export type PymParticle = {
 };
 export type PymProperty = {
   name: string;
-  type: PymType["type"];
+  type: string | PymType;
 };
 export type PymType = {
   type: string | PymType | [PymType, ...PymType[]];

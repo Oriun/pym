@@ -1,0 +1,160 @@
+{
+    "id": "R-c8SDuQ_diVjrbeplLh1",
+    "meta": {
+        "name": "ma-selection",
+        "issuedAt": 1679678101328,
+        "expiresAt": 1679678103128
+    },
+    "analytics": {
+        "source": "Groupe-Nice-Matin",
+        "source_id": "51bd6c7dd4fc"
+    },
+    "compositions": [
+        ""
+    ],
+    "advertisements": [
+        {
+            "id": "AGoL1yBYPsOLAEUO3A_qe",
+            "firstLine": "VERONIC DICAIRE",
+            "secondLine": "Le 14 avr. 2023",
+            "thirdLine": "LA PALESTRE, France",
+            "previewLink": "https://timenjoy.fr/event/5f57ea56-a6bd-4385-8111-4718484be871",
+            "originLink": "https://ticketmaster-fr.tm7516.net/c/2414852/427761/7516?u=https%3A%2F%2Fwww.ticketmaster.fr%2Ffr%2Fmanifestation%2Fveronic-dicaire-billet%2Fidmanif%2F482287%2Fidtier%2F18864121",
+            "type": "event",
+            "picture": "VERONIC-DICAIRE-TiBvpPf_L3U7euRVpBMzK",
+            "composition": {
+                "filename": ""
+            }
+        },
+        {
+            "id": "zaerqlZSYl2PfUIKKV5NN",
+            "firstLine": "Certifié Mado",
+            "secondLine": "Le 14 avr. 2023",
+            "thirdLine": "Casino Ruhl, Nice, France",
+            "previewLink": "https://timenjoy.fr/event/93bc837c-064d-432b-8b11-608de16b6bb8",
+            "originLink": "https://www.casinosbarriere.com/fr/nice/spectacles-et-animations/diner-spectacle/oups.html",
+            "type": "event",
+            "picture": "Certifie-Mado-mmwMJT1oyzJfYJJRO3EnV",
+            "composition": {
+                "filename": ""
+            }
+        },
+        {
+            "id": "0pAzQzgprYrI_kxa-_yuV",
+            "firstLine": "Salon des Vignerons",
+            "secondLine": "31 mars au 2 avr. 2023",
+            "thirdLine": "Mandelieu-la-Napoule, France",
+            "previewLink": "https://timenjoy.fr/event/b1154713-20b2-4a7f-b562-709d9f880949",
+            "originLink": "https://rebrand.ly/SalonVignerons_NM_240323",
+            "type": "event",
+            "picture": "Salon-des-Vignerons-FhZ8rVuxNZr9TUEXZ80WS",
+            "composition": {
+                "filename": ""
+            }
+        },
+        {
+            "id": "zDxs611h10zyBw7TH2Ndo",
+            "firstLine": "La Belle au bois dormant",
+            "secondLine": "Le 30 mars 2023",
+            "thirdLine": "Théâtre de l'Hélice, Contes, France",
+            "previewLink": "https://timenjoy.fr/event/c3f25850-ec85-4763-ab09-82e15ce27ecf",
+            "originLink": "https://rebrand.ly/Polysonance_BelleBoisDormant_NM_160323",
+            "type": "event",
+            "picture": "La-Belle-au-bois-dormant-QdxS86yMuOc4zoT4A8fC",
+            "composition": {
+                "filename": ""
+            }
+        },
+        {
+            "id": "dngIA6Oz0aNQEeJMblWEM",
+            "firstLine": "La Foire joue les divas !",
+            "secondLine": "Jusqu'au 27 mars 2023",
+            "thirdLine": "Palais des Expositions, Nice, France",
+            "previewLink": "https://timenjoy.fr/event/5831d45a-2f11-4cda-9fd2-fe07f2bbb0c2",
+            "originLink": "https://rebrand.ly/FoireDeNice_NM_180323",
+            "type": "event",
+            "picture": "La-Foire-joue-les-divas-!-Cy4Z2QQiHoeVrhG7rnXaD",
+            "composition": {
+                "filename": ""
+            }
+        },
+        {
+            "id": "NJfkYpc206Qy-Mgv5W56d",
+            "firstLine": "Vincent Niclo",
+            "secondLine": "Le 25 mai 2023",
+            "thirdLine": "Rue d'Italie, Nice, France",
+            "previewLink": "https://timenjoy.fr/event/3fb9f201-eeb5-4568-b271-38239da544b0",
+            "originLink": "https://www.ticketmaster.fr/fr/manifestation/vincent-niclo-billet/idmanif/543262",
+            "type": "event",
+            "picture": "Vincent-Niclo-JK113JXJXQZnMr7L5fkuU",
+            "composition": {
+                "filename": ""
+            }
+        },
+        {
+            "id": "sHu_cdwfW47ZppjnGuSl5",
+            "firstLine": "Jérémy Nadeau",
+            "secondLine": "Le 19 mai 2023",
+            "thirdLine": "La Nouvelle Comédie, Nice, France",
+            "previewLink": "https://timenjoy.fr/event/61cced9a-0ace-4d9d-965f-5e1c2fd6a14b",
+            "originLink": "https://www.ticketmaster.fr/fr/manifestation/jeremy-nadeau-billet/idmanif/542702",
+            "type": "event",
+            "picture": "Jeremy-Nadeau-3wTDpYXVPjh2s889IPBaw",
+            "composition": {
+                "filename": ""
+            }
+        },
+        {
+            "id": "FVtRPffLRXucjXyTPwWpk",
+            "firstLine": "Laurent Barat - Pallia-Aide",
+            "secondLine": "Le 1 avr. 2023",
+            "thirdLine": "Opéra de Nice, France",
+            "previewLink": "https://timenjoy.fr/event/adc6d79a-4e40-4736-9098-95c4688ddca7",
+            "originLink": "https://ticketmaster-fr.tm7516.net/75e093",
+            "type": "event",
+            "picture": "Laurent-Barat-Pallia-Aide-_XKaDCGyt30CfH0wjWnFS",
+            "composition": {
+                "filename": ""
+            }
+        },
+        {
+            "id": "HbCxLEh2TmiMddlMuk__k",
+            "firstLine": "Fakear",
+            "secondLine": "Le 25 mars 2023",
+            "thirdLine": "Théâtre Lino Ventura, Nice, France",
+            "previewLink": "https://timenjoy.fr/event/ed4a8e65-fdd0-4b02-8ce5-9bab283792d1",
+            "originLink": "https://ticketmaster-fr.tm7516.net/anRGZj",
+            "type": "event",
+            "picture": "Fakear-ZSHwjveoXuQfJunEun9Jw",
+            "composition": {
+                "filename": ""
+            }
+        },
+        {
+            "id": "5yRsmaNNQ9NmV0sgTLUPB",
+            "firstLine": "GROUNDATION – HEBRON GATE",
+            "secondLine": "Le 20 mai 2023",
+            "thirdLine": " Théâtre Lino Ventura, France",
+            "previewLink": "https://timenjoy.fr/event/f2efec1e-7ca9-421f-b0ef-8c01e9666ae8",
+            "originLink": "https://www.awin1.com/cread.php?awinmid=7939&awinaffid=529657&campaign=mc_tribune&ued=https%3A%2F%2Fwww.seetickets.com%2Ffr%2Fd%2Fevent%2Fgroundation-hebron-gate-20th-anniversary-tour%2Ftheatre-lino-ventura%2F9489317",
+            "type": "event",
+            "picture": "GROUNDATION-HEBRON-GATE-oZ-WMPfqgHGhVcOK76RCB",
+            "composition": {
+                "filename": ""
+            }
+        },
+        {
+            "id": "ycqPTDpTjgfESmpnWfH1o",
+            "firstLine": "Conférences Sciences pour tous - Beaulieu",
+            "secondLine": "Le 20 avr. 2023",
+            "thirdLine": "Beaulieu-sur-Mer",
+            "previewLink": "https://timenjoy.fr/event/51369748-c4dd-417b-96c9-70bd6a2bf730",
+            "originLink": "https://sciencepourtous-06.fr/",
+            "type": "event",
+            "picture": "Conferences-Sciences-pour-tous-Beaulieu-UMeRhQXApJQU-990tsMAv",
+            "composition": {
+                "filename": ""
+            }
+        }
+    ]
+}
