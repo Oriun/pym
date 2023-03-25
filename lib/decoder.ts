@@ -114,8 +114,9 @@ export const decode = (
   let index = startIndex;
   for (const property of start.properties) {
     if (index > bits.length) throw new Error("Invalid bits");
-    if (bits[index++] === "0") {
+    if (bits[index] === "0") {
       decoded[property.name] = null;
+      index++;
       continue;
     }
     if (!isComplexe(property.type)) {

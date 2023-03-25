@@ -1,6 +1,6 @@
 const fs = require("fs");
 const protobuf = require("protocol-buffers");
-const { pym } = require("../../dist");
+const { pym } = require("../../dist/pym");
 
 const data = fs.readFileSync(__dirname + "/input.json", "utf-8");
 const object = JSON.parse(data);

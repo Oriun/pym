@@ -1,4 +1,3 @@
-import { writeFileSync } from "fs";
 import { PymModel, PymParticle, PymProperty, PymType } from "./types";
 import { defaultCharset } from "./defaults";
 export function parse(schema: string): PymModel {
@@ -75,15 +74,6 @@ export function parse(schema: string): PymModel {
       });
     }
   }
-  writeFileSync(
-    "model.json",
-    JSON.stringify(
-      // @ts-ignore
-      { ...model, particles: Object.fromEntries(model.particles) },
-      null,
-      2
-    )
-  );
   return model as PymModel;
 }
 

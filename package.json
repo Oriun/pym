@@ -2,15 +2,35 @@
   "name": "pym",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
   "scripts": {
-    "dev": "tsc --watch & nodemon -w dist dist/index.js"
+    "dev": "tsc --watch & nodemon -w dist dist/index.js",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^18.15.5",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.2",
+    "vite": "^4.2.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.mjs"
+    },
+    "./decoder": {
+      "import": "./dist/decoder.js",
+      "require": "./dist/decoder.mjs"
+    },
+    "./schema": {
+      "import": "./dist/schema.js",
+      "require": "./dist/schema.mjs"
+    }
   }
 }

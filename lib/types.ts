@@ -1,18 +1,21 @@
-export type PymModel = {
+export interface PymModel {
   meta: {
     syntax: string;
     charset: string;
   };
   particles: Map<string, PymParticle>;
-};
-export type PymParticle = {
+}
+
+export interface PymParticle {
   name: string;
   properties: PymProperty[];
-};
-export type PymProperty = {
+}
+
+export interface PymProperty {
   name: string;
   type: string | PymType;
-};
+}
+
 export type PymType = {
   type: string | PymType | [PymType, ...PymType[]];
   array: boolean;

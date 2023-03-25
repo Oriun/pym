@@ -1,7 +1,7 @@
 const assert = require("assert");
 const fs = require("fs");
 const protobuf = require("protocol-buffers");
-const { pym } = require("../../dist");
+const { pym } = require("../../dist/pym");
 
 const data = fs.readFileSync(__dirname + "/input.json", "utf-8");
 const object = JSON.parse(data);
@@ -22,7 +22,7 @@ console.timeEnd("Pym");
 
 const model = schema.compile();
 fs.writeFileSync(__dirname + "/compiled.pym", model);
-console.log(pym.decompile(model));
+pym.decompile(model);
 
 console.log(`
 JSON : ${data.length} / 100%
@@ -38,7 +38,8 @@ Pym : ${pymEncoded.byteLength} / ${(
 
 fs.writeFileSync(__dirname + "/output.proto", protoEncoded);
 fs.writeFileSync(__dirname + "/output.pym", pymEncoded);
-
+fs.writeFileSync(__dirname + "/output.pym.octet", pymEncoded.toString());
+process.exit();
 console.log("Decoding");
 console.time("JSON");
 const jsonDecoded = JSON.parse(data);

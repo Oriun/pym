@@ -170,9 +170,9 @@ export const encode = (
       encoded += "0";
       continue;
     }
-    encoded += "1";
     if (!isComplexe(property.type as PymType["type"])) {
-      encoded += handleNonComplexe(model, property, object);
+      const value = handleNonComplexe(model, property, object);
+      encoded += value.startsWith("1") ? value : "1" + value;
     } else {
       let types = (property.type as PymType).type as (string | PymType)[];
       const matchingType = types.findIndex((type) =>
@@ -199,7 +199,8 @@ export const encode = (
         },
         object
       );
-      encoded += matchingType.toString(2).padStart(maxtypes, "0") + word;
+      const value = matchingType.toString(2).padStart(maxtypes, "0") + word;
+      encoded += value.startsWith("1") ? value : "1" + value;
     }
   }
   return bytes ? asBytes(encoded) : encoded;
